@@ -15,14 +15,11 @@ def getDataFiles(submodule, folder):
     return files
 
 DATA_FILES = [
-    ('metar_data/test_data', getDataFiles('.',  'test')),
     ('metar_data/reference', getDataFiles('.', 'reference')),
-    #('pybmp_data/nsqd', getDataFiles('nsqd', 'data')),
 ]
 
 PACKAGE_DATA = {
     'metar/reference': ['reference/*'],
-    'metar/testing': ['test/*']
 }
 
 DESCRIPTION="Metar - a package to parse METAR coded weather reports"
